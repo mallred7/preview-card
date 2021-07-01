@@ -14,10 +14,17 @@
 
   #container {
     background: hsl(244, 38%, 16%);
-    margin: 10vh 5vw;
+    margin: 20vh auto;
+    width: 70%;
     justify-content: center;
     border-radius: 5px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .split {
+    flex: 1;
   }
 
   #hero {
@@ -61,7 +68,15 @@
     color: hsla(0, 0%, 100%, 0.75);
     margin: 0 2rem;
     line-height: 1.6rem;
-    font-size: .8rem;
+    font-size: 15px;
+    word-wrap: normal;
+    width: 80%;
+  }
+
+  #stats {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
   }
 
   h2 {
@@ -78,4 +93,18 @@
   footer {
     color: white;
     font-size: .8rem;
+  }
+
+  footer a {
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 1440px) {
+    #container {
+      flex-direction: row-reverse;
+    }
+
+    #hero image {
+      content:url("images/image-header-desktop.jpg")
+    };
   }
