@@ -15,7 +15,8 @@ body {
 #container {
   background: hsl(244, 38%, 16%);
   margin: 20vh auto;
-  width: 70%;
+  width: 60%;
+  max-width: 1080px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
@@ -30,16 +31,19 @@ body {
   };
 }
 
+.half {
+  min-width: 50%;
+}
+
 @media screen and (min-width: 1440px) {
   .half {
-    /* max-width: 540px; */
-    /* the above rule evenly sizes the two halves but breaks
-      styles WRT the hero image aligning with the container*/
-  }
+    max-width: 540px; 
+    }
 }
 
 #hero {
   position: relative;
+  width: 100%;
 }
 
 img {
@@ -72,6 +76,10 @@ a {
   flex-direction: column;
 }
 
+#content > * {
+  padding-top: 1.5rem;
+}
+
 span {
   color: hsl(277, 64%, 61%);
 }
@@ -80,15 +88,15 @@ h1, .tally {
   color: hsl(0, 0%, 100%);
 }
 
-h1 {
+#content > h1 {
   font-size: 1.5rem;
-  margin: 2rem 2rem 1rem;
+  margin: 0 10%;
   letter-spacing: .07rem;
 }
 
 #content > p {
   color: hsla(0, 0%, 100%, 0.75);
-  margin: 0 2rem;
+  margin: 0 auto;
   line-height: 1.6rem;
   font-size: 15px;
   word-wrap: normal;
@@ -98,7 +106,6 @@ h1 {
 @media screen and (min-width: 1440px) {
   #content > h1, #content > p, #content > #data {
     text-align: left;
-    margin-left: 6rem;
   }
 }
 
@@ -119,6 +126,7 @@ h1 {
 .datum {
   display: flex;
   flex-direction: column;
+  padding-top: 0;
 }
 
 @media screen and (min-width: 1440px) {
@@ -129,13 +137,14 @@ h1 {
 
 h2 {
   margin-bottom: .2rem;
+  margin-top: .2rem;
 }
 
 .category {
   color: hsla(0, 0%, 100%, 0.6);
   text-transform: uppercase;
   font-size: .7rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 footer {
