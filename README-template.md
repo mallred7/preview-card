@@ -45,18 +45,14 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+I worked on this project using the Live Server extension for VS Code to see my changes in realtime using a browser window with developer mode enabled to toggle between desktop and mobile viewing resolutions. Most work was done with a mobile resolution selected, changing to a desktop resolution just to make sure mobile styles weren't overly broken on a wider display.
+
 ### Built with
 
-- Semantic HTML5 markup
+- HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
@@ -72,11 +68,6 @@ To see how you can add code snippets, see below:
   color: papayawhip;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
@@ -84,27 +75,23 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I'd like to try to focus on optimizing the time I spend working on projects. I feel like I spent 50% of my time on this project fine-tuning the final 10% of touches to the page. I'm not sure if I need to work on getting the bulk of the project up in less time at the beginning or making more prudent edits towards the end.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I'd also like to get more comfortable with Grid. I think some of the slowdowns I experienced recoding the project were caused by figuring out how to wrestle Flexbox into doing what I wanted it to do, and I think being comfortable with Grid will help me save time in the instances that it's quicker and easier to implement than a Flexbox kludge.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- ["A Complete Guide to Flexbox"](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - This flexbox cheat sheet is a borderline crutch for me. Immensely helpful to the point that I struggle to commit aspects of flexbox to memory because I know I can find them here.
+- [A random stackoverflow response](https://stackoverflow.com/questions/10266849/image-will-not-fill-div) - The second answer to this question (setting display to 'block') resolved an issue I was having with getting the hero image to fit the entire container it was in without leaving a small bar of space at the bottom. I set heights for everything to 100% and it didn't resolve the issue but this did. Not sure if setting the image to a block element causes any other problems but for now it works the way I want it to.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+- Website - [Matt Allred](mattallred.dev)
+- Frontend Mentor - [@mallred7](https://www.frontendmentor.io/profile/mallred7)
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+The following is a comment on writer's block by songwriter Jason Isbell that I've taken to heart when I try to code. I think it's helped me overcome the awkwardness of putting code on the screen that I'm not 100% confident in: 
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+  "I do not believe in it. My job is to write, not to like what I'm writing. That's why we edit, and nobody gets editor's block".
+
